@@ -1,0 +1,42 @@
+body{
+    background-color: #272B30;
+}
+:root{
+     --main-font: "Comforter Brush", cursive;
+     --second-font: "Nerko One", cursive;
+}
+
+.mt-n1 {
+  margin-top: -4rem !important;
+}
+
+/* .img{
+    background-image: url("../assets/imgs/wraper.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+} */
+
+/* .navbar .container {
+  position: sticky;
+  top: 0;
+  z-index: 1030; 
+} */
+ 
+
+
+nav .container .navbar-brand{
+    font-family: var(--second-font);
+    font-size: 30px;
+}
+
+.link{
+    color: white;
+    transition: color 0.5s ease-in;
+    font-weight: 400;
+}
+
+.link:hover{
+    color: #0691C4;
+}
