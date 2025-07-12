@@ -6,24 +6,16 @@ body{
      --second-font: "Nerko One", cursive;
 }
 
-.mt-n1 {
+/* .mt-n1 {
   margin-top: -4rem !important;
-}
-
-/* .img{
-    background-image: url("../assets/imgs/wraper.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
 } */
 
-/* .navbar .container {
+ 
+nav.navbar {
   position: sticky;
   top: 0;
-  z-index: 1030; 
-} */
- 
+  z-index: 1030;
+}
 
 
 nav .container .navbar-brand{

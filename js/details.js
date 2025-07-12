@@ -1,8 +1,12 @@
 //ay 7aga t5os el details
 "use strict"
 class Details{
-async fetchDetails(id){
-    const url = `https://free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`;
+
+async fetchDetails(gameId){
+	 if(!gameId)
+		{console.log("ID is NULL")
+		return}
+    const url = `https://free-to-play-games-database.p.rapidapi.com/api/game?id=${gameId}`;
 const options = {
 	method: 'GET',
 	headers: {
@@ -10,6 +14,7 @@ const options = {
 		'x-rapidapi-host': 'free-to-play-games-database.p.rapidapi.com'
 	}
 };
+
 
 try {
 	const response = await fetch(url, options);

@@ -27,11 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
       hideLoader()
       let Cards = new UI(cards);
       Cards.displayCards();
-    //   let details=new Details();
-    //  let ans= await details.fetchDetails(1);
-    // console.log(ans)
+  
+    
+
     })
   );
+
+
 
 
   (async function loadInitialCategory() {
@@ -49,9 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function showLoader() {
-  document.getElementById("loader").classList.remove("d-none");
+ const loader= document.getElementById("loader")
+    if (loader) loader.classList.remove("d-none");
+
 }
 
 function hideLoader() {
-  document.getElementById("loader").classList.add("d-none");
+  const loader = document.getElementById("loader");
+  if (loader) loader.classList.add("d-none");
 }
