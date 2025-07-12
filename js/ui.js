@@ -32,7 +32,7 @@ card.innerHTML=cartona;
   arrayGames.forEach(el=>{
     el.addEventListener("click",async()=>{
     const id = el.getAttribute("data-id").trim();
-     location.href=`../details.html?id=${id}`
+     location.href = `details.html?id=${id}`;
 
     })
   })
